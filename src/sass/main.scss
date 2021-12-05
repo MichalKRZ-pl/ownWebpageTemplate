@@ -1,7 +1,54 @@
-@import './colors';
+@import "./colors";
 
-*, *::before, *::after{
-    box-sizing: border-box;
-    padding: 0;    
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $raisin-black;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $light-gray;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    padding: 0.5em;
+
+    color: $firebrick;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 1.6em 0.5em;
+
+    &--contrast {
+      color: $snow;
+      background-color: $firebrick;
+    }
+  }
 }
