@@ -117,6 +117,20 @@ body {
   }
 }
 
+.portfolio {
+  margin-top: 2em;
+
+  color: $light-gray;
+  &__header {
+    padding: 0.5em 1em;
+    font-size: 3.2rem;
+  }
+
+  &__card {
+    border: 1px solid $snow;
+  }
+}
+
 @import "./small";
 @import "./medium";
 @import "./large.scss";
