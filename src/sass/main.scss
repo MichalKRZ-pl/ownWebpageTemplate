@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./mixins";
 
 *,
 *::before,
@@ -99,9 +100,9 @@ body {
     height: 5px;
     transform: translateY(-50%);
 
-    &--active {
-      background-color: white;
-    }
+    // &--active {
+    //   background-color: white;
+    // }
 
     &:nth-of-type(1) {
       width: 100%;
@@ -130,15 +131,21 @@ body {
 
   background-color: $light-gray;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-ccc;
   transform: translateX(100%);
 
   &__item {
+    font-size: 3.2rem;
+    padding: 1em;
+    width: 100%;
+    display: block;
     text-decoration: none;
-    color: $firebrick;
+    color: $raisin-black;
+    border-top: 1px solid $blue-munsell;
+    text-align: center;
+    &:last-of-type {
+      border-bottom: 1px solid $blue-munsell;
+    }
   }
 }
 
