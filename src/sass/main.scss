@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+:root {
+  --header-font-size: 2.8rem;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -44,7 +48,7 @@ body {
 
   &__burger,
   &__title {
-    font-size: 2.8rem;
+    font-size: var(--header-font-size);
     padding: 0.5em;
   }
 
@@ -154,12 +158,15 @@ body {
   }
 }
 
+//title section of main page
+
 .title {
   position: relative;
-  height: 100vh;
-  max-height: 1000px;
+  //font-size: var(--header-font-size);
+  height: calc(100vh - 2 * var(--header-font-size));
 
   color: $snow;
+
   &__header {
     position: absolute;
     top: 50%;
@@ -183,9 +190,10 @@ body {
     height: 100%;
 
     //change to locally hosted images outside of github
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_1280.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_1280.png");
     background-size: cover;
     background-position: center;
+    background-attachment: scroll;
     z-index: 0;
 
     position: relative;
@@ -199,7 +207,7 @@ body {
       width: 100%;
 
       content: "";
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.7);
     }
   }
 }
