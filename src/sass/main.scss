@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --header-font-size: 2.8rem;
 }
@@ -42,9 +46,9 @@ body {
 
   border-bottom: 2px solid $firebrick;
 
-  &__logo {
-    text-decoration: none;
-  }
+  // &__logo {
+  //   text-decoration: none;
+  // }
 
   &__burger,
   &__title {
@@ -64,7 +68,7 @@ body {
 
   &__item {
     padding: 1.6em 0.5em;
-    text-decoration: none;
+    //text-decoration: none;
     color: $raisin-black;
 
     &--contrast {
@@ -148,7 +152,7 @@ body {
     padding: 1em;
     width: 100%;
     display: block;
-    text-decoration: none;
+    //text-decoration: none;
     color: $raisin-black;
     border-bottom: 1px solid $blue-munsell;
     text-align: center;
@@ -209,6 +213,17 @@ body {
       content: "";
       background-color: rgba(0, 0, 0, 0.7);
     }
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5em;
+    color: $snow;
+    font-size: 2.8rem;
+    //text-decoration: none;
   }
 }
 
