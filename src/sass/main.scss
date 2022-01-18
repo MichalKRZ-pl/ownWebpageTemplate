@@ -173,20 +173,20 @@ body {
 
   &__header {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     width: 100%;
+    padding: 0.5em 1em;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 6.4rem;
-    span {
-      font-size: 4.8rem;
-    }
+    @include flex-ccs;
+    flex-wrap: wrap;
+    font-size: 3.2rem;
+  }
+
+  &__span--small {
+    font-size: 2.4rem;
   }
 
   &__image {
@@ -217,7 +217,7 @@ body {
 
   &__arrow {
     position: absolute;
-    bottom: 0;
+    bottom: 1em;
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5em;

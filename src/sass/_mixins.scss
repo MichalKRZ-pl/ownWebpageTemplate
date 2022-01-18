@@ -11,3 +11,10 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@mixin flex-ccs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
