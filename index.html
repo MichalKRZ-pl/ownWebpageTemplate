@@ -9,32 +9,32 @@
   </head>
   <body>
     <header class="header wrapper">
-  <a href="index.html#" class="header__logo">
-    <h2 class="header__title">Nazwa firmy</h2>
-  </a>
+      <a href="index.html#" class="header__logo">
+        <h2 class="header__title">Nazwa firmy</h2>
+      </a>
 
-  <button class="header__burger">
-    <div class="header__burger-box">
-      <div class="header__burger-bar"></div>
-      <div class="header__burger-bar"></div>
-      <div class="header__burger-bar"></div>
-    </div>
-  </button>
+      <button class="header__burger">
+        <div class="header__burger-box">
+          <div class="header__burger-bar"></div>
+          <div class="header__burger-bar"></div>
+          <div class="header__burger-bar"></div>
+        </div>
+      </button>
 
-  <nav class="header__menu">
-    <a href="#" class="header__item">Usługi</a>
-    <a href="#" class="header__item">Portfolio</a>
-    <a href="#" class="header__item">O mnie</a>
-    <a href="#" class="header__item header__item--contrast">Kontakt</a>
-  </nav>
-</header>
+      <nav class="header__menu">
+        <a href="#services" class="header__item">Usługi</a>
+        <a href="#portfolio" class="header__item">Portfolio</a>
+        <a href="#about-us" class="header__item">O mnie</a>
+        <a href="#contact" class="header__item header__item--contrast">Kontakt</a>
+      </nav>
+    </header>
 
-<nav class="mobile">
-  <a href="#" class="mobile__item">Usługi</a>
-  <a href="#" class="mobile__item">Portfolio</a>
-  <a href="#" class="mobile__item">O mnie</a>
-  <a href="#" class="mobile__item mobile__item--contrast">Kontakt</a>
-</nav>
+    <nav class="mobile">
+      <a href="#services" class="mobile__item">Usługi</a>
+      <a href="#portfolio" class="mobile__item">Portfolio</a>
+      <a href="#about-us" class="mobile__item">O mnie</a>
+      <a href="#contact" class="mobile__item mobile__item--contrast">Kontakt</a>
+    </nav>
 
     <section class="title wrapper">
       <h1 class="title__header">
@@ -42,10 +42,10 @@
         <span class="title__span title__span--small">dla mikro i mini przedsiębiorstw</span>
       </h1>
       <div class="title__image"></div>
-      <a href="#" class="title__arrow">⌄</a>
+      <a href="#about-us" class="title__arrow">⌄</a>
     </section>
 
-    <section class="about-us wrapper">
+    <section id="about-us" class="about-us wrapper">
       <h2 class="about-us__header">O mnie</h2>
       <div class="about-us__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cupiditate accusantium
@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h2 class="portfolio__header">Portfolio</h2>
       <div class="portfolio__card">
         <h3 class="portfolio__card-title">Strona 1</h3>
@@ -71,6 +71,8 @@
         >
       </div>
     </section>
+
+    <section id="services" class="services wrapper"></section>
   </body>
   <script src="/dist/js/main.min.js"></script>
 </html>
