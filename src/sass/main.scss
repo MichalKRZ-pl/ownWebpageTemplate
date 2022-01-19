@@ -14,7 +14,9 @@ a {
 }
 
 :root {
-  --header-font-size: 2.8rem;
+  --nav-font-size: 2.8rem;
+  --title-header-font-size: 3.2rem;
+  --section-header-font-size: 3.2rem;
 }
 
 html {
@@ -52,7 +54,7 @@ body {
 
   &__burger,
   &__title {
-    font-size: var(--header-font-size);
+    font-size: var(--nav-font-size);
     padding: 0.5em;
   }
 
@@ -167,7 +169,7 @@ body {
 .title {
   position: relative;
   //font-size: var(--header-font-size);
-  height: calc(100vh - 2 * var(--header-font-size));
+  height: calc(100vh - 2 * var(--nav-font-size));
 
   color: $snow;
 
@@ -182,11 +184,12 @@ body {
 
     @include flex-ccs;
     flex-wrap: wrap;
-    font-size: 3.2rem;
+    font-size: var(--title-header-font-size);
   }
 
   &__span--small {
-    font-size: 2.4rem;
+    font-size: calc(0.75 * var(--title-header-font-size));
+    font-weight: 400;
   }
 
   &__image {

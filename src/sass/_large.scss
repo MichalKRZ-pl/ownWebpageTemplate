@@ -1,21 +1,11 @@
 @media (min-width: 992px) {
-  .title {
-    &__header {
-      font-size: 4.8rem;
-    }
-    &__span--small {
-      font-size: 3.6rem;
-    }
+  :root {
+    --title-header-font-size: 4.8rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .title {
-    &__header {
-      font-size: 6.4rem;
-    }
-    &__span--small {
-      font-size: 4.8rem;
-    }
+  :root {
+    --title-header-font-size: 6.4rem;
   }
 }
