@@ -235,7 +235,7 @@ body {
   &__header {
     margin-top: 1em;
     padding: 0.5em 1em;
-    font-size: 3.2rem;
+    font-size: var(--section-header-font-size);
   }
 
   &__text {
@@ -246,15 +246,28 @@ body {
 
 .portfolio {
   margin-top: 2em;
-
-  color: $light-gray;
+  background-color: $light-gray;
+  color: $raisin-black;
   &__header {
     padding: 0.5em 1em;
-    font-size: 3.2rem;
+    font-size: var(--section-header-font-size);
   }
 
   &__card {
-    border: 1px solid $snow;
+    max-width: 300px;
+    border: 1px solid $blue-munsell;
+    border-radius: 8px;
+    @include flex-ccc;
+  }
+
+  &__card-title {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-weight: 400;
+  }
+  &__card-img {
+    padding: 0.5em;
+    width: 100%;
   }
 }
 
