@@ -25,7 +25,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: $raisin-black;
+  //background-color: $raisin-black;
+  background-color: black;
   scroll-behavior: smooth;
 }
 
@@ -36,6 +37,8 @@ section {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  // border-left: 1px solid $light-gray;
+  // border-right: 1px solid $light-gray;
 }
 
 .header {
@@ -234,6 +237,8 @@ section {
 
 .about-us {
   color: $light-gray;
+  background-color: $raisin-black;
+
   &__header {
     padding: 0.5em 1em;
     font-size: var(--section-header-font-size);
@@ -245,7 +250,7 @@ section {
 }
 
 .portfolio {
-  margin-top: 2em;
+  //margin-top: 2em;
   background-color: $light-gray;
   color: $raisin-black;
 
