@@ -261,7 +261,8 @@ body {
   }
 
   &__card {
-    max-width: 300px;
+    max-width: 400px;
+    margin: 20px;
     border: 1px solid $blue-munsell;
     border-radius: 8px;
     @include flex-ccc;
@@ -279,8 +280,16 @@ body {
     font-weight: 400;
   }
   &__card-img {
-    padding: 0.5em;
+    padding: 0.5em 1em;
     width: 100%;
+  }
+  &__card-link {
+    color: $firebrick;
+    padding: 0.5em 1em;
+  }
+  &__card-text {
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
   }
 }
 

@@ -2,4 +2,18 @@
   :root {
     --title-header-font-size: 3.8rem;
   }
+
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__header {
+      flex-basis: 100%;
+    }
+
+    &__card {
+      max-width: unset;
+      flex-basis: 40%;
+    }
+  }
 }
