@@ -29,6 +29,10 @@ body {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: calc(2 * var(--nav-font-size));
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -168,7 +172,6 @@ body {
 
 .title {
   position: relative;
-  //font-size: var(--header-font-size);
   height: calc(100vh - 2 * var(--nav-font-size));
 
   color: $snow;
@@ -226,21 +229,18 @@ body {
     padding: 0.5em;
     color: $snow;
     font-size: 2.8rem;
-    //text-decoration: none;
   }
 }
 
 .about-us {
   color: $light-gray;
   &__header {
-    margin-top: 1em;
     padding: 0.5em 1em;
     font-size: var(--section-header-font-size);
   }
 
   &__text {
     padding: 1em 2em;
-    //text-align: justify;
   }
 }
 
