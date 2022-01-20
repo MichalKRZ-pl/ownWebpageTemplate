@@ -4,12 +4,52 @@
   }
 
   .portfolio {
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
+    grid-template-rows: auto;
+
+    &__header {
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+
     &__separator {
-      display: block;
-      height: 200px;
+      grid-row: 2/7;
+      grid-column: 2/3;
+      margin: 0 auto;
+
+      display: inline-block;
+      height: 100%;
       width: 2px;
       background-color: $blue-munsell;
     }
+
+    &__card {
+      flex-basis: unset;
+      grid-area: span 2 / span 1;
+      &--left {
+        grid-column: 1/2;
+      }
+      &--right {
+        grid-column: 3/4;
+        margin-top: 15%;
+      }
+    }
+
+    // &__empty {
+    //   display: block;
+    //   grid-area: span 1 / span 1;
+    //   background-color: violet;
+    //   border: 1px solid green;
+    //   width: 100%;
+    //   height: 100%;
+    //   &--left {
+    //     grid-column: 1/2;
+    //   }
+    //   &--right {
+    //     grid-column: 3/4;
+    //   }
+    // }
   }
 }
 

@@ -260,6 +260,10 @@ section {
     display: none;
   }
 
+  &__empty {
+    display: none;
+  }
+
   &__card {
     max-width: 400px;
     margin: 20px;
