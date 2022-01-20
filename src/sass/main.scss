@@ -248,9 +248,16 @@ body {
   margin-top: 2em;
   background-color: $light-gray;
   color: $raisin-black;
+
+  @include flex-ccc;
+
   &__header {
     padding: 0.5em 1em;
     font-size: var(--section-header-font-size);
+  }
+
+  &__separator {
+    display: none;
   }
 
   &__card {
@@ -258,6 +265,12 @@ body {
     border: 1px solid $blue-munsell;
     border-radius: 8px;
     @include flex-ccc;
+    &--left {
+      align-self: flex-start;
+    }
+    &--right {
+      align-self: flex-end;
+    }
   }
 
   &__card-title {
