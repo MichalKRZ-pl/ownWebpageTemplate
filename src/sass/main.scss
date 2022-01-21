@@ -322,6 +322,13 @@ section {
     border-radius: 8px;
     background-color: $light-gray;
     @include flex-ccc;
+
+    &--left {
+      align-self: flex-start;
+    }
+    &--right {
+      align-self: flex-end;
+    }
   }
 
   &__img {
