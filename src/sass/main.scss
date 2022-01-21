@@ -242,6 +242,7 @@ section {
   &__header {
     padding: 0.5em 1em;
     font-size: var(--section-header-font-size);
+    text-align: center;
   }
 
   &__text {
@@ -299,6 +300,39 @@ section {
   &__card-text {
     padding: 0.5em 1em;
     margin-bottom: 1em;
+  }
+}
+
+.services {
+  //color: $light-gray;
+  background-color: $raisin-black;
+
+  @include flex-ccc;
+
+  &__header {
+    padding: 0.5em 1em;
+    font-size: var(--section-header-font-size);
+    color: $snow;
+  }
+
+  &__card {
+    max-width: 400px;
+    margin: 20px;
+    border: 1px solid $blue-munsell;
+    border-radius: 8px;
+    background-color: $light-gray;
+    @include flex-ccc;
+  }
+
+  &__img {
+    padding: 0.5em 1em;
+    width: 100%;
+  }
+
+  &__title,
+  &__text {
+    color: $raisin-black;
+    padding: 0.5em 1em;
   }
 }
 
