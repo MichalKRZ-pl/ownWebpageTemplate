@@ -306,6 +306,7 @@ section {
 .services {
   //color: $light-gray;
   background-color: $raisin-black;
+  padding-bottom: 1em;
 
   @include flex-ccc;
 

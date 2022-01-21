@@ -32,4 +32,16 @@
       max-width: 400px;
     }
   }
+
+  .footer {
+    padding: 0.5em;
+    &__list {
+      order: unset;
+      flex-direction: row;
+    }
+    &__bottom {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }
