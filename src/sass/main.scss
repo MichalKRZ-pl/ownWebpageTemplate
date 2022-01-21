@@ -343,6 +343,32 @@ section {
   }
 }
 
+.footer {
+  background-color: $light-gray;
+  color: $raisin-black;
+
+  &__bottom {
+    @include flex-ccc;
+  }
+  &__list {
+    order: -1;
+
+    @include flex-ccc;
+  }
+  &__link {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    color: $raisin-black;
+    cursor: default;
+
+    position: relative;
+    @include dynamic-underline(2px, $blue-munsell);
+  }
+  &__copyright {
+    padding: 0.5em 1em;
+  }
+}
+
 @import "./small";
 @import "./medium";
 @import "./large.scss";
