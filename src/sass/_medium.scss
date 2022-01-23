@@ -9,8 +9,9 @@
     }
   }
 
-  .portfolio,
-  .services {
+  .portfolio
+//   .services {
+  {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,13 +32,11 @@
     }
   }
 
-  .services {
-    &__card {
-      &:last-child {
-        margin: 1em auto;
-      }
-    }
-  }
-
-  
+  //   .services {
+  //     &__card {
+  //       &:last-child {
+  //         margin: 1em auto;
+  //       }
+  //     }
+  //   }
 }

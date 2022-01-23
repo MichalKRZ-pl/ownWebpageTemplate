@@ -315,6 +315,8 @@ section {
     height: 25em;
     margin: 0 2em;
     position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
   }
 
   &__carousel-btn {
@@ -337,6 +339,27 @@ section {
     }
   }
 
+  &__carousel-dot-controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+  }
+  &__dot {
+    padding: 0.5em;
+    margin: 0.5em 0.2em;
+
+    background-color: $blue-munsell;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    &--current {
+      background-color: $firebrick;
+    }
+  }
+
   &__header {
     padding: 0.5em 1em;
     font-size: var(--section-header-font-size);
@@ -352,7 +375,7 @@ section {
     border: 1px solid $blue-munsell;
     border-radius: 8px;
     background-color: $light-gray;
-    @include flex-ccc;
+    @include flex-csc;
 
     &--left {
       align-self: flex-start;
@@ -364,6 +387,7 @@ section {
 
   &__img {
     padding: 0.5em 1em;
+    margin-top: 0.5em;
     width: 100%;
   }
 
