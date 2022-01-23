@@ -44,11 +44,12 @@ const prepareDOMEvents = () => {
 
 const handleCarouselDotControls = (e) => {
   const currentSlide = $carousel.querySelector(".services__card--current");
-  const currentDot = document.querySelectorAll(".services__dot--current");
+  const currentDot = document.querySelector(".services__dot--current");
   const targetIndex = Array.from($dotControls).findIndex((dot) => dot === e.target);
   const targetSlide = $carouselSlides[targetIndex];
 
   moveToNextSlide(currentSlide, targetSlide);
+  moveToNextDot(currentDot, $dotControls[targetIndex]);
 };
 
 const moveToNextSlide = (currentSlide, nextSlide) => {
@@ -56,17 +57,27 @@ const moveToNextSlide = (currentSlide, nextSlide) => {
   currentSlide.classList.remove("services__card--current");
   nextSlide.classList.add("services__card--current");
 };
+const moveToNextDot = (currentDot, nextDot) => {
+  currentDot.classList.remove("services__dot--current");
+  nextDot.classList.add("services__dot--current");
+};
 
 const handleRightBtn = () => {
   const currentSlide = document.querySelector(".services__card--current");
   const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = document.querySelector(".services__dot--current");
+  const nextDot = currentDot.nextElementSibling;
   moveToNextSlide(currentSlide, nextSlide);
+  moveToNextDot(currentDot, nextDot);
 };
 
 const handleLeftBtn = () => {
   const currentSlide = document.querySelector(".services__card--current");
   const nextSlide = currentSlide.previousElementSibling;
+  const currentDot = document.querySelector(".services__dot--current");
+  const nextDot = currentDot.previousElementSibling;
   moveToNextSlide(currentSlide, nextSlide);
+  moveToNextDot(currentDot, nextDot);
 };
 
 const setSlidePosition = (slide, index) => {
