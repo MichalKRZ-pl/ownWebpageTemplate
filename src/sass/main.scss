@@ -315,50 +315,50 @@ section {
     height: 25em;
     margin: 0 2em;
     position: relative;
-    overflow: hidden;
-    transition: transform 0.3s;
+    //overflow: hidden;
+    //transition: transform 0.3s;
   }
 
-  &__carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    padding: 0.5em;
-    color: $blue-munsell;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid transparent;
-    //border-radius: 8px;
-    cursor: pointer;
-    z-index: 1;
-    &--left {
-      left: 0;
-    }
-    &--right {
-      right: 0;
-    }
-  }
+  // &__carousel-btn {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   font-size: 2em;
+  //   padding: 0.5em;
+  //   color: $blue-munsell;
+  //   background-color: rgba(0, 0, 0, 0.7);
+  //   border: 1px solid transparent;
+  //   //border-radius: 8px;
+  //   cursor: pointer;
+  //   z-index: 1;
+  //   &--left {
+  //     left: 0;
+  //   }
+  //   &--right {
+  //     right: 0;
+  //   }
+  // }
 
-  &__carousel-dot-controls {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  // &__carousel-dot-controls {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%);
 
-    display: flex;
-  }
-  &__dot {
-    padding: 0.5em;
-    margin: 0.5em 0.2em;
+  //   display: flex;
+  // }
+  // &__dot {
+  //   padding: 0.5em;
+  //   margin: 0.5em 0.2em;
 
-    background-color: $blue-munsell;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1;
-    &--current {
-      background-color: $firebrick;
-    }
-  }
+  //   background-color: $blue-munsell;
+  //   border-radius: 50%;
+  //   cursor: pointer;
+  //   z-index: 1;
+  //   &--current {
+  //     background-color: $firebrick;
+  //   }
+  // }
 
   &__header {
     padding: 0.5em 1em;
@@ -367,7 +367,7 @@ section {
   }
 
   &__card {
-    position: absolute;
+    //position: absolute;
     min-height: 25em;
     width: 100%;
     border: 1px solid $blue-munsell;

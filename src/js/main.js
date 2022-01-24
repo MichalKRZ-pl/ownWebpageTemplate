@@ -6,12 +6,12 @@ let $mobileMenu;
 let $footerYear;
 
 //carousel in services section related variables
-let $carousel;
-let $carouselSlides;
-let $carouselLeftBtn;
-let $carouselRightBtn;
-let $slideWidth;
-let $dotControls;
+// let $carousel;
+// let $carouselSlides;
+// let $carouselLeftBtn;
+// let $carouselRightBtn;
+// let $slideWidth;
+// let $dotControls;
 
 const main = () => {
   prepareDOMElements();
@@ -22,24 +22,24 @@ const prepareDOMElements = () => {
   $burgerBtn = document.querySelector(".header__burger");
   $mobileMenu = document.querySelector(".mobile");
   $footerYear = document.querySelector(".footer__year");
-  $carousel = document.querySelector(".services__carousel-track");
-  $carouselSlides = Array.from($carousel.children);
-  $carouselLeftBtn = document.querySelector(".services__carousel-btn--left");
-  $carouselRightBtn = document.querySelector(".services__carousel-btn--right");
-  $slideWidth = $carouselSlides[0].getBoundingClientRect().width;
-  $dotControls = document.querySelectorAll(".services__dot");
+  //   $carousel = document.querySelector(".services__carousel-track");
+  //   $carouselSlides = Array.from($carousel.children);
+  //   $carouselLeftBtn = document.querySelector(".services__carousel-btn--left");
+  //   $carouselRightBtn = document.querySelector(".services__carousel-btn--right");
+  //   $slideWidth = $carouselSlides[0].getBoundingClientRect().width;
+  //   $dotControls = document.querySelectorAll(".services__dot");
 };
 
 const prepareDOMEvents = () => {
   $burgerBtn.addEventListener("click", handleBurger);
   handleFooterYear();
   //console.log($carouselSlides);
-  prepareCarousel();
-  $carouselRightBtn.addEventListener("click", handleRightBtn);
-  $carouselLeftBtn.addEventListener("click", handleLeftBtn);
-  $dotControls.forEach((indicator) => {
-    indicator.addEventListener("click", handleCarouselDotControls);
-  });
+  //   prepareCarousel();
+  //   $carouselRightBtn.addEventListener("click", handleRightBtn);
+  //   $carouselLeftBtn.addEventListener("click", handleLeftBtn);
+  //   $dotControls.forEach((indicator) => {
+  //     indicator.addEventListener("click", handleCarouselDotControls);
+  //   });
 };
 
 const handleCarouselDotControls = (e) => {

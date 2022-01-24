@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nazwa firmy - strony itnernetowy dla mikro i mini przedsiębiorst</title>
-    <link rel="stylesheet" href="/dist/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/dist/css/main.min.css" />
   </head>
   <body>
     <!-- @include 'nav.kit'-->
@@ -108,12 +113,12 @@
       <h2 class="services__header">Usługi</h2>
 
       <div class="services__carousel">
-        <button class="services__carousel-btn services__carousel-btn--left">&lt;</button>
+        <!-- <button class="services__carousel-btn services__carousel-btn--left">&lt;</button> -->
 
         <div class="services__carousel-track">
           <!-- @include 'services.kit'-->
         </div>
-        <div class="services__carousel-dot-controls">
+        <!-- <div class="services__carousel-dot-controls">
           <div class="services__dot services__dot--current"></div>
           <div class="services__dot"></div>
           <div class="services__dot"></div>
@@ -121,13 +126,20 @@
           <div class="services__dot"></div>
           <div class="services__dot"></div>
           <div class="services__dot"></div>
-        </div>
+        </div> -->
 
-        <button class="services__carousel-btn services__carousel-btn--right">&gt;</button>
+        <!-- <button class="services__carousel-btn services__carousel-btn--right">&gt;</button> -->
       </div>
     </section>
 
     <!-- @include 'footer.kit'-->
   </body>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="/dist/js/slicksettings.min.js"></script>
   <script src="/dist/js/main.min.js"></script>
 </html>
