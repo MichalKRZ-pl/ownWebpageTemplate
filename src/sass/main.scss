@@ -304,40 +304,41 @@ section {
 }
 
 .services {
-  //color: $light-gray;
   background-color: $raisin-black;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 
-  //@include flex-ccc;
+  &__header {
+    padding: 0.5em 1em;
+    font-size: var(--section-header-font-size);
+    color: $snow;
+  }
 
   &__carousel {
     max-width: 100%;
     height: 25em;
-    margin: 0 2em;
+    padding: 0 2em;
     position: relative;
-    //overflow: hidden;
-    //transition: transform 0.3s;
   }
 
-  // &__carousel-btn {
-  //   position: absolute;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   font-size: 2em;
-  //   padding: 0.5em;
-  //   color: $blue-munsell;
-  //   background-color: rgba(0, 0, 0, 0.7);
-  //   border: 1px solid transparent;
-  //   //border-radius: 8px;
-  //   cursor: pointer;
-  //   z-index: 1;
-  //   &--left {
-  //     left: 0;
-  //   }
-  //   &--right {
-  //     right: 0;
-  //   }
-  // }
+  &__carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    padding: 0.5em;
+    color: $blue-munsell;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid transparent;
+    //border-radius: 8px;
+    cursor: pointer;
+    z-index: 1;
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+  }
 
   // &__carousel-dot-controls {
   //   position: absolute;
@@ -360,16 +361,10 @@ section {
   //   }
   // }
 
-  &__header {
-    padding: 0.5em 1em;
-    font-size: var(--section-header-font-size);
-    color: $snow;
-  }
-
   &__card {
-    //position: absolute;
     min-height: 25em;
     width: 100%;
+    margin: 0.5em;
     border: 1px solid $blue-munsell;
     border-radius: 8px;
     background-color: $light-gray;
@@ -386,7 +381,9 @@ section {
   &__img {
     padding: 0.5em 1em;
     margin-top: 0.5em;
+    object-fit: cover;
     width: 100%;
+    height: 10em;
   }
 
   &__title,

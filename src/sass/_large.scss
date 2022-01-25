@@ -36,6 +36,12 @@
       }
     }
   }
+
+  .services {
+    &__card {
+      margin: 1em;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
