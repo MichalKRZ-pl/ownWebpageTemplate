@@ -32,3 +32,7 @@ $(".services__carousel-btn--left").click(function () {
 $(".services__carousel-btn--right").click(function () {
   $(".services__carousel-track").slick("slickNext");
 });
+
+$(window).resize(function () {
+  $(".services__carousel-track")[0].slick.refresh();
+});
