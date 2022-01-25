@@ -405,9 +405,16 @@ section {
   }
 
   &__title,
-  &__text {
+  &__text,
+  &__link {
     color: $raisin-black;
     padding: 0.5em 1em;
+  }
+
+  &__text--highlight {
+    margin-top: 2em;
+    color: $firebrick;
+    font-weight: 700;
   }
 }
 
