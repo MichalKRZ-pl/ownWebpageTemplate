@@ -6,6 +6,9 @@ $(".services__carousel-track").slick({
   mobilefirst: true,
   autoplay: true,
   arrows: false,
+  dots: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
 
   responsive: [
     {

@@ -37,8 +37,26 @@ section {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  // border-left: 1px solid $light-gray;
-  // border-right: 1px solid $light-gray;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -2em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  li {
+    list-style: none;
+    button {
+      height: 1em;
+      width: 1em;
+      margin: 0.5em;
+      border-radius: 50%;
+      background-color: $blue-munsell;
+      color: $blue-munsell;
+      border: 1px solid transparent;
+    }
+  }
 }
 
 .header {
