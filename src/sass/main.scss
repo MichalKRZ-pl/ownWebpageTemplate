@@ -383,10 +383,11 @@ section {
     min-height: 25em;
     width: 100%;
     margin: 0.5em;
-    border: 1px solid $blue-munsell;
+    border: 2px solid $blue-munsell;
     border-radius: 8px;
     background-color: $light-gray;
     @include flex-csc;
+    cursor: pointer;
 
     &--left {
       align-self: flex-start;
