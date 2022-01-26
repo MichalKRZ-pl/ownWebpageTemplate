@@ -297,7 +297,7 @@ section {
   &__card {
     max-width: 400px;
     margin: 20px;
-    border: 1px solid $blue-munsell;
+    border: 2px solid $blue-munsell;
     border-radius: 8px;
     @include flex-ccc;
     &--left {
@@ -442,6 +442,36 @@ section {
   }
   &__text {
     text-indent: 1em;
+  }
+}
+
+//styles for kontakt.kit
+.contact {
+  background-color: $raisin-black;
+  color: $snow;
+  padding: 1em 2em;
+
+  &__header {
+    padding: 0.5em 0;
+    font-size: var(--section-header-font-size);
+  }
+  &__address-box {
+    background-color: $light-gray;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    border: 2px solid $blue-munsell;
+  }
+  &__address-header {
+    color: $firebrick;
+    text-transform: uppercase;
+  }
+  &__address-line {
+    color: $raisin-black;
+  }
+
+  &__address-mail {
+    color: $firebrick;
   }
 }
 
