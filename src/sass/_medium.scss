@@ -9,8 +9,7 @@
     }
   }
 
-  .portfolio
-  {
+  .portfolio {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,4 +30,14 @@
     }
   }
 
+  .services-page {
+    grid-template-columns: 1fr 1fr 1fr;
+    &__header {
+      grid-column: 1/4;
+    }
+
+    .services__card:last-child {
+      grid-column: 2/3;
+    }
+  }
 }
