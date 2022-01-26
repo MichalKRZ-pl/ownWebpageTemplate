@@ -25,7 +25,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  //background-color: $raisin-black;
   background-color: black;
   scroll-behavior: smooth;
 }
@@ -277,7 +276,6 @@ section {
 }
 
 .portfolio {
-  //margin-top: 2em;
   background-color: $light-gray;
   color: $raisin-black;
 
@@ -429,8 +427,8 @@ section {
 
 //styles for policy.kit
 .policy {
-  background-color: $light-gray;
-  color: $raisin-black;
+  background-color: $raisin-black;
+  color: $snow;
   padding: 1em 2em;
 
   &__header {
@@ -440,6 +438,9 @@ section {
   &__paragraph {
     font-size: 1.8rem;
     padding: 0.5em 0;
+  }
+  &__text {
+    text-indent: 1em;
   }
 }
 
