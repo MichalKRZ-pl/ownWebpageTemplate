@@ -39,3 +39,5 @@ $(".services__carousel-btn--right").click(function () {
 $(window).resize(function () {
   $(".services__carousel-track")[0].slick.refresh();
 });
+
+

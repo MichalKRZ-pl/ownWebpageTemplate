@@ -53,10 +53,18 @@ section {
       margin: 0.5em;
       border-radius: 50%;
       background-color: $blue-munsell;
-      color: $blue-munsell;
+
       border: 1px solid transparent;
+      text-indent: -9999px;
+      &:active {
+        background-color: $firebrick;
+      }
     }
   }
+}
+
+.slick-dots li.slick-active button {
+  background-color: $firebrick;
 }
 
 .header {
@@ -419,6 +427,23 @@ section {
   }
 }
 
+//styles for policy.kit
+.policy {
+  background-color: $light-gray;
+  color: $raisin-black;
+  padding: 1em 2em;
+
+  &__header {
+    padding: 0.5em 0;
+    font-size: var(--section-header-font-size);
+  }
+  &__paragraph {
+    font-size: 1.8rem;
+    padding: 0.5em 0;
+  }
+}
+
+//styles for footer.kit
 .footer {
   background-color: $light-gray;
   color: $raisin-black;
