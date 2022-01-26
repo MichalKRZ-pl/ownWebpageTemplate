@@ -364,27 +364,6 @@ section {
     }
   }
 
-  // &__carousel-dot-controls {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-
-  //   display: flex;
-  // }
-  // &__dot {
-  //   padding: 0.5em;
-  //   margin: 0.5em 0.2em;
-
-  //   background-color: $blue-munsell;
-  //   border-radius: 50%;
-  //   cursor: pointer;
-  //   z-index: 1;
-  //   &--current {
-  //     background-color: $firebrick;
-  //   }
-  // }
-
   &__card {
     min-height: 25em;
     width: 100%;
@@ -422,6 +401,44 @@ section {
     margin-top: 2em;
     color: $firebrick;
     font-weight: 700;
+  }
+}
+
+//styles for uslugi.kit
+.services-page {
+  padding: 1em 2em;
+  background-color: $raisin-black;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 1em;
+  column-gap: 1em;
+
+  &__header {
+    color: $snow;
+    font-size: var(--section-header-font-size);
+  }
+
+  .services__card {
+    margin: 0;
+    min-height: unset;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .services__title {
+    order: -1;
+    margin-top: 1em;
+  }
+
+  .services__img {
+    margin: 0;
+    padding: 0 1em;
+  }
+
+  .services__text--highlight {
+    display: none;
   }
 }
 
